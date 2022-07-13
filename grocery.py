@@ -37,7 +37,7 @@ class Solution:
         combined_string = str1 + str2
         combined_list = list(combined_string.split(" "))
         no_duplicate = []
-        i = 0
+        i = 1
         while i < len(combined_list):
             if combined_list[i] not in no_duplicate:
                 no_duplicate.append(combined_list[i])
@@ -46,8 +46,8 @@ class Solution:
         pass
 
 def main():
-    string1 = input()
-    string2 = input()
+    string1 = input.strip()
+    string2 = input.strip()
 
     tc1 = Solution()
     ans = tc1.my_grocery_list(string1,string2)
