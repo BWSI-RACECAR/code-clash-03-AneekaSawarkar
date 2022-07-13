@@ -49,7 +49,7 @@ class Solution:
 
 
 
-       ''' final_list = []
+        ''' final_list = []
         list1 = str1.split(' ')
         list1[len(list1) - 1] = list1[len(list1) - 1].strip()
         list2 = str1.split(' ')
