@@ -34,10 +34,10 @@ class Solution:
         # return: list
 
         # TODO: Write code below to return a list with the solution to the prompt
-        ''' list1 = str1.split(' ')
-        list1[len(list1) - 1] = list1[len(list1) - 1].strip()
+        list1 = str1.split(' ')
+        #list1[len(list1) - 1] = list1[len(list1) - 1].strip()
         list2 = str1.split(' ')
-        list2[len(list1) - 1] = list2[len(list2) - 1].strip()
+        #list2[len(list1) - 1] = list2[len(list2) - 1].strip()
         combined_list = list1 + list2
         no_duplicate = []
         i = 0
@@ -45,24 +45,26 @@ class Solution:
             if combined_list[i] not in no_duplicate and combined_list[i] != '':
                 no_duplicate.append(combined_list[i])
             i += 1
-        return no_duplicate '''
+        return no_duplicate
 
-        final_list = []
+
+
+       ''' final_list = []
         list1 = str1.split(' ')
         list1[len(list1) - 1] = list1[len(list1) - 1].strip()
         list2 = str1.split(' ')
-        list2[len(list1) - 1] = list2[len(list2) - 1].strip()
+        list2[len(list2) - 1] = list2[len(list2) - 1].strip()
         for item in list1:
             if item not in final_list and item != '':
                 final_list.append(item)
         for item in list2:
             if item not in final_list and item != '':
                 final_list.append(item)
-        return final_list
+        return final_list '''
 
 def main():
-    string1 = input.split()
-    string2 = input.split()
+    string1 = input()
+    string2 = input()
 
     tc1 = Solution()
     ans = tc1.my_grocery_list(string1,string2)
