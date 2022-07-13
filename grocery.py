@@ -34,16 +34,16 @@ class Solution:
         # return: list
 
         # TODO: Write code below to return a list with the solution to the prompt
-        combined_string = str1 + str2
+        combined_string = str1 + ' ' + str2
         combined_list = list(combined_string.split(" "))
         no_duplicate = []
-        i = 1
+        i = 0
         while i < len(combined_list):
             if combined_list[i] not in no_duplicate:
                 no_duplicate.append(combined_list[i])
             i += 1
+        print(no_duplicate)
         return no_duplicate
-        pass
 
 def main():
     string1 = input.split()
