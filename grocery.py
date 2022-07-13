@@ -61,8 +61,8 @@ class Solution:
         return final_list
 
 def main():
-    string1 = input()
-    string2 = input()
+    string1 = input.split()
+    string2 = input.split()
 
     tc1 = Solution()
     ans = tc1.my_grocery_list(string1,string2)
