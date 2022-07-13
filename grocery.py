@@ -46,8 +46,8 @@ class Solution:
         pass
 
 def main():
-    string1 = input.strip()
-    string2 = input.strip()
+    string1 = input.split()
+    string2 = input.split()
 
     tc1 = Solution()
     ans = tc1.my_grocery_list(string1,string2)
