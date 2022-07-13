@@ -36,9 +36,10 @@ class Solution:
         # TODO: Write code below to return a list with the solution to the prompt
         list1 = str1.split(' ')
         list1[len(list1) - 1] = list1[len(list1) - 1].strip()
-        list2 = str1.split(' ')
+        list2 = str2.split(' ')
         list2[len(list1) - 1] = list2[len(list2) - 1].strip()
         combined_list = list1 + list2
+        #print(combined_list)
         no_duplicate = []
         i = 0
         while i < len(combined_list):
