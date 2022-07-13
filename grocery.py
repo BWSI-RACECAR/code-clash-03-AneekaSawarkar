@@ -41,6 +41,7 @@ class Solution:
         while i < len(combined_list):
             if combined_list[i] not in no_duplicate:
                 no_duplicate.append(combined_list[i])
+            i += 1
         return no_duplicate
         pass
 
