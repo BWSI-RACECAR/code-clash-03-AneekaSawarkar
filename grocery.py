@@ -34,20 +34,22 @@ class Solution:
         # return: list
 
         # TODO: Write code below to return a list with the solution to the prompt
-        combined_string = str1 + ' ' + str2
-        combined_list = list(combined_string.split(" "))
+        list1 = str1.split(' ')
+        list1[len(list1) - 1] = list1[len(list1) - 1].strip()
+        list2 = str1.split(' ')
+        list2[len(list1) - 1] = list2[len(list2) - 1].strip()
+        combined_list = list1 + list2
         no_duplicate = []
         i = 0
         while i < len(combined_list):
-            if combined_list[i] not in no_duplicate:
+            if combined_list[i] not in no_duplicate and combined_list[i] != '':
                 no_duplicate.append(combined_list[i])
             i += 1
-        print(no_duplicate)
         return no_duplicate
 
 def main():
-    string1 = input.split()
-    string2 = input.split()
+    string1 = input()
+    string2 = input()
 
     tc1 = Solution()
     ans = tc1.my_grocery_list(string1,string2)
